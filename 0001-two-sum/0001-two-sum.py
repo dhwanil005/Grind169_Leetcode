@@ -3,8 +3,8 @@ class Solution:
         prevMap ={}
         
         for i, n in enumerate(nums):
-            diff= target - n
-            if diff in prevMap:
-                return[prevMap[diff],i]
+            
+            if target - n in prevMap:
+                return[prevMap[target - n],i]
             prevMap[n] = i
         return
