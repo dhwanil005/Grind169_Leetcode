@@ -3,8 +3,8 @@ class Solution:
         helper = []
        
         for i in range(n+1):
-            temp = (bin(i))
-            helper.append(temp[2:])
+             
+            helper.append((bin(i)))
         
         
         for i in range(len(helper)):
