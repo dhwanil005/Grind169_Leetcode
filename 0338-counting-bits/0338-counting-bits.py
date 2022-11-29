@@ -4,9 +4,8 @@ class Solution:
        
         for i in range(n+1):
              
-            helper.append((bin(i)))
+            helper.append((bin(i).count("1")))
         
         
-        for i in range(len(helper)):
-            helper[i] = helper[i].count("1")
+       
         return helper
