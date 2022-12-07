@@ -8,10 +8,7 @@ class Solution:
             div *= 10
             
         while x:
-            right = x % 10
-            left = x // div
-            
-            if left!= right:
+            if  x // div!=  x % 10:
                 return False
             x = (x%div) // 10
             div = div / 100
